@@ -1,0 +1,276 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: #fff;
+            padding: 20px;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            color: #ffd700;
+        }
+
+        .subtitle {
+            font-size: 1.1em;
+            color: #e0e0e0;
+            margin-bottom: 5px;
+        }
+
+        .info-ciclo {
+            font-size: 0.95em;
+            color: #b3d9ff;
+            margin-top: 10px;
+            font-style: italic;
+        }
+
+        h2 {
+            font-size: 1.9em;
+            margin-bottom: 25px;
+            color: #ffd700;
+        }
+
+        .pantalla {
+            display: none;
+        }
+
+        .pantalla.activa {
+            display: block;
+        }
+        .btn-volver {
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            padding: 12px 25px;
+            border: 2px solid rgba(255, 255, 255, 0.5);
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-bottom: 25px;
+            transition: all 0.3s;
+        }
+
+        .btn-volver:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateX(-5px);
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .tarjeta {
+            background: rgba(255, 255, 255, 0.15);
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            border-radius: 15px;
+            padding: 30px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s;
+            backdrop-filter: blur(10px);
+        }
+
+        .tarjeta:hover {
+            background: rgba(255, 255, 255, 0.25);
+            transform: translateY(-8px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        .tarjeta h3 {
+            font-size: 1.4em;
+            margin-bottom: 10px;
+            color: #ffd700;
+        }
+
+        .tarjeta p {
+            font-size: 0.9em;
+            color: #ddd;
+        }
+
+        .icono-curso {
+            font-size: 3em;
+            margin-bottom: 15px;
+        }
+
+        .creditos {
+            display: inline-block;
+            background: rgba(255, 215, 0, 0.2);
+            color: #ffd700;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        .lista-semanas {
+            background: white;
+            color: #333;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .item-semana {
+            background: linear-gradient(135deg, #2a5298 0%, #1e3c72 100%);
+            color: white;
+            padding: 20px 25px;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-left: 5px solid #ffd700;
+        }
+
+        .item-semana:hover {
+            transform: translateX(10px);
+            box-shadow: 0 5px 15px rgba(42, 82, 152, 0.5);
+        }
+
+        .info-semana h4 {
+            font-size: 1.3em;
+            margin-bottom: 5px;
+        }
+
+        .info-semana p {
+            font-size: 0.9em;
+            opacity: 0.9;
+        }
+
+        .estado-semana {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .badge-materiales {
+            background: rgba(255, 215, 0, 0.3);
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            font-weight: bold;
+        }
+
+        .icono-disponible {
+            font-size: 2em;
+        }
+
+        .icono-pendiente {
+            font-size: 2em;
+        }   
+        
+        .seccion-materiales {
+            background: white;
+            color: #333;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .seccion-materiales h3 {
+            color: #1e3c72;
+            margin-bottom: 20px;
+            font-size: 1.5em;
+        }
+
+        .material {
+            background: #f8f9fa;
+            border-left: 5px solid #2a5298;
+            padding: 20px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            transition: all 0.3s;
+        }
+
+        .material:hover {
+            background: #e9ecef;
+            transform: translateX(5px);
+        }
+
+        .material h4 {
+            margin-bottom: 10px;
+            color: #1e3c72;
+            font-size: 1.2em;
+        }
+
+        .material p {
+            font-size: 0.95em;
+            color: #666;
+            margin-bottom: 8px;
+        }
+
+        .tipo-material {
+            display: inline-block;
+            background: #2a5298;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 15px;
+            font-size: 0.85em;
+            margin-right: 10px;
+        }
+
+        .btn-descargar {
+            background: linear-gradient(135deg, #2a5298 0%, #1e3c72 100%);
+            color: white;
+            padding: 10px 25px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-top: 12px;
+            transition: all 0.3s;
+            font-weight: bold;
+        }
+
+        .btn-descargar:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 15px rgba(42, 82, 152, 0.4);
+        }
+
+        .mensaje-vacio {
+            text-align: center;
+            padding: 40px;
+            color: #999;
+            font-style: italic;
+            font-size: 1.1em;
+        }
+
+        .nota-importante {
+            background: rgba(255, 215, 0, 0.2);
+            border-left: 4px solid #ffd700;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 8px;
+            color: #fff;
+        }
+
+        .nota-importante strong {
+            color: #ffd700;
+        }
+        .icono-imagen {
+            width: 28px;
+            height: 28px;
+        }

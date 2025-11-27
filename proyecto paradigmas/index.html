@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UPCH Study - Ingeniería Informática</title>
+    <link  rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+<body>
+    <div class="container">
+        <header>
+            <h1>UPCH Study</h1>
+            <p class="subtitle">Ingeniería Informática - Ciclo 2024-2</p>
+            <p class="info-ciclo">Plataforma de intercambio de apuntes y talleres resueltos</p>
+        </header>
+
+        <div id="pantalla-cursos" class="pantalla activa">
+            <h2>Selecciona tu Curso - 3er Ciclo</h2>
+            
+            <div class="nota-importante">
+                <strong> Nota:</strong> Solo se comparten apuntes de clase y resoluciones de talleres.
+            </div>
+
+            <div class="grid">
+                <div class="tarjeta" onclick="irASemanas(1, 'Cálculo Integral para Ingeniería')">
+                    <h3>Cálculo Integral para Ingeniería</h3>
+                    <span class="creditos">4 créditos</span>
+                </div>
+
+                <div class="tarjeta" onclick="irASemanas(2, 'Electrónica Digital y Robótica')">
+                    <h3>Electrónica Digital y Robótica</h3>
+                    <span class="creditos">4 créditos</span>
+                </div>
+
+                <div class="tarjeta" onclick="irASemanas(3, 'Procesos de Innovación en Ingeniería')">
+                    <h3>Procesos de Innovación en Ingeniería</h3>
+                    <span class="creditos">2 créditos</span>
+                </div>
+
+                <div class="tarjeta" onclick="irASemanas(4, 'Bases de Datos I')">
+                    <h3>Bases de Datos I</h3>
+                    <span class="creditos">4 créditos</span>
+                </div>
+
+                <div class="tarjeta" onclick="irASemanas(5, 'Paradigmas de Lenguajes de Programación')">
+                    <h3>Paradigmas de Lenguajes de Programación</h3>
+                    <span class="creditos">4 créditos</span>
+                </div>
+
+                <div class="tarjeta" onclick="irASemanas(6, 'Estructuras Discretas I')">
+                    <h3>Estructuras Discretas I</h3>
+                    <span class="creditos">4 créditos</span>
+                </div>
+            </div>
+        </div>
+        <div id="pantalla-semanas" class="pantalla">
+            <button class="btn-volver" onclick="volverACursos()">← Volver a Cursos</button>
+            <h2 id="titulo-curso">Semanas del Curso</h2>
+            
+            <div class="lista-semanas" id="lista-semanas"></div>
+        </div>
+        <div id="pantalla-materiales" class="pantalla">
+            <button class="btn-volver" onclick="volverASemanas()">← Volver a Semanas</button>
+            <h2 id="titulo-semana">Materiales de la Semana</h2>
+            
+            <div class="seccion-materiales" id="lista-materiales"></div>
+        </div>
+    </div>
+<script src="assets/script.js"></script>
+
+</body>
+</html>
