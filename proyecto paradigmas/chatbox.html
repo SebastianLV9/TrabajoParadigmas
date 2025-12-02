@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat de Ayuda - UPCH Study</title>
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body class="body-chatbox">
+    <div class="contenedor-chatbox">
+        <div class="header-chatbox">
+            <div class="info-header-chat">
+                <div class="avatar-chat"></div>
+                <div>
+                    <h3>Asistente UPCH Study</h3>
+                    <p class="estado-chat">En línea</p>
+                </div>
+            </div>
+            <button class="btn-cerrar-chat" onclick="cerrarChatbox()">✕</button>
+        </div>
+
+        <div class="area-mensajes" id="area-mensajes">
+            <div class="mensaje-bot">
+                <div class="avatar-mensaje"></div>
+                <div class="contenido-mensaje">
+                    <p>¡Hola! Soy el asistente virtual de UPCH Study. ¿En qué puedo ayudarte hoy?</p>
+                    <span class="hora-mensaje">Ahora</span>
+                </div>
+            </div>
+
+            <div class="opciones-rapidas">
+                <button class="opcion-rapida" onclick="enviarOpcion('¿Cómo funciona la plataforma?')">
+                    ¿Cómo funciona?
+                </button>
+                <button class="opcion-rapida" onclick="enviarOpcion('¿Cómo puedo compartir materiales?')">
+                    Compartir materiales
+                </button>
+                <button class="opcion-rapida" onclick="enviarOpcion('¿Qué cursos están disponibles?')">
+                    Cursos disponibles
+                </button>
+                <button class="opcion-rapida" onclick="enviarOpcion('Contactar con soporte')">
+                    Soporte
+                </button>
+            </div>
+        </div>
+
+        <div class="entrada-chat">
+            <input type="text" id="input-mensaje" placeholder="Escribe tu mensaje..." onkeypress="enviarConEnter(event)">
+            <button class="btn-enviar-chat" onclick="enviarMensaje()"></button>
+        </div>
+    </div>
+
+    <script src="assets/chatbox.js"></script>
+</body>
+</html>

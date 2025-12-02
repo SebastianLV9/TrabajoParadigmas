@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UPCH Study - Ingeniería Informática</title>
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">UPCH Study</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-activo">Inicio</a></li>
+                <li><a href="quienes-somos.html">Quiénes Somos</a></li>
+                <li><a href="proposito.html">Nuestro Propósito</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <header>
+            <h1>UPCH Study</h1>
+            <p class="subtitle">Ingeniería Informática - Ciclo 2024-2</p>
+            <p class="info-ciclo">Plataforma de intercambio de apuntes y talleres resueltos</p>
+        </header>
+
+        <div id="pantalla-cursos" class="pantalla activa">
+            <h2>Selecciona tu Curso - 3er Ciclo</h2>
+            
+            <div class="nota-importante">
+                <strong> Nota:</strong> Solo se comparten apuntes de clase y resoluciones de talleres.
+            </div>
+
+            <div class="grid">
+                <div class="tarjeta" onclick="irASemanas(1, 'Cálculo Integral para Ingeniería')">
+                    <h3>Cálculo Integral para Ingeniería</h3>
+                    <span class="creditos">4 créditos</span>
+                </div>
+
+                <div class="tarjeta" onclick="irASemanas(2, 'Electrónica Digital y Robótica')">
+                    <h3>Electrónica Digital y Robótica</h3>
+                    <span class="creditos">4 créditos</span>
+                </div>
+
+                <div class="tarjeta" onclick="irASemanas(3, 'Procesos de Innovación en Ingeniería')">
+                    <h3>Procesos de Innovación en Ingeniería</h3>
+                    <span class="creditos">2 créditos</span>
+                </div>
+
+                <div class="tarjeta" onclick="irASemanas(4, 'Bases de Datos I')">
+                    <h3>Bases de Datos I</h3>
+                    <span class="creditos">4 créditos</span>
+                </div>
+
+                <div class="tarjeta" onclick="irASemanas(5, 'Paradigmas de Lenguajes de Programación')">
+                    <h3>Paradigmas de Lenguajes de Programación</h3>
+                    <span class="creditos">4 créditos</span>
+                </div>
+
+                <div class="tarjeta" onclick="irASemanas(6, 'Estructuras Discretas I')">
+                    <h3>Estructuras Discretas I</h3>
+                    <span class="creditos">4 créditos</span>
+                </div>
+            </div>
+        </div>
+
+        <div id="pantalla-semanas" class="pantalla">
+            <button class="btn-volver" onclick="volverACursos()">Volver a Cursos</button>
+            <h2 id="titulo-curso">Semanas del curso</h2>
+            
+            <div class="lista-semanas" id="lista-semanas"></div>
+        </div>
+
+        <div id="pantalla-materiales" class="pantalla">
+            <button class="btn-volver" onclick="volverASemanas()">Volver a Semanas</button>
+            <h2 id="titulo-semana">Materiales de la semana</h2>
+            
+            <div class="seccion-materiales" id="lista-materiales"></div>
+        </div>
+    </div>
+
+    <button class="btn-chatbox" onclick="abrirChatbox()"></button>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Síguenos</h4>
+                <div class="redes-sociales">
+                    <a href="https://facebook.com" target="_blank">Facebook</a>
+                    <a href="https://instagram.com" target="_blank">Instagram</a>
+                    <a href="https://twitter.com" target="_blank">Twitter</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <p>&copy; 2025 UPCH Study.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/script.js"></script>
+</body>
+</html>
